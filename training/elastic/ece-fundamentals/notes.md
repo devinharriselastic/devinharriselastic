@@ -66,3 +66,9 @@
 ### Activity Feed
 - This page shows recent activity as well as activity that has happened on clusters over past 24 hours
 ### Lab 2 - Elastic Cloud Enterprise Interfaces
+- Got install finished up, placed output into a text file on machine `elastic-output.txt` Key values:
+  - Cloud UI: `http://172.31.43.230:12400`, `https://172.31.43.230:12443`
+  - Admin username: `admin`
+  - Password: `uOGegrHOLilxhJ0dLfIDNyvuDQuVjlTjitw2OSlwTBI`
+  - Read-only username: `readonly`
+  - Password: `kKKxbutM8EK1gp0h1gf9GTmrYk9OnwMtvvtbLKJYIOT`
