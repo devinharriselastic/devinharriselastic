@@ -72,3 +72,7 @@
   - Password: `uOGegrHOLilxhJ0dLfIDNyvuDQuVjlTjitw2OSlwTBI`
   - Read-only username: `readonly`
   - Password: `kKKxbutM8EK1gp0h1gf9GTmrYk9OnwMtvvtbLKJYIOT`
+- Accessed web UI via `https://ec2-3-69-54-234.eu-central-1.compute.amazonaws.com:12443`
+- Created `my_cluster` as described in the tutorial
+  - username: `elastic`
+  - password: `EKLbgimnv7U3TLbAcUJXvHli` 
