@@ -29,7 +29,7 @@
   - I'm not sure how relevant this is for me, so I'm asking in my [original issue](https://github.com/elastic/infosec/issues/7433#issuecomment-915308822)
   -
 ## Lesson 2: Elastic Cloud Enterprise Interfaces
-- Installing: `(curl -fsSL https://download.elastic.co/cloud/elastic-cloud-enterprise.sh) install`
+- Installing: `bash <(curl -fsSL https://download.elastic.co/cloud/elastic-cloud-enterprise.sh) install`
   - Downloads and runs Elastic Install Script
   - Downloads and installs several Elastic Stack Packs by default
   - Displays output with details for administering the new install including:
@@ -50,4 +50,19 @@
   - security cluster 
     - user and role management for cloud UI and SSO for deployments are handled here
 - From the deployments view we can see key information about the deployments
-- Each deployment has an overview page that provides key information about that deployment including information about the ElasticSearch and Kibana deployments 
+- Each deployment has an overview page that provides key information about that deployment including information about the ElasticSearch and Kibana deployments
+### Platform
+- Contains summary information
+- Allocators information
+- Runners information
+- Proxies information
+- Contructors information
+- Elastic Stack information
+  - By default ECE comes with two MAJOR version of elastic stack available 
+- Templates information 
+- Repositories information
+- Settings information
+- Security information
+### Activity Feed
+- This page shows recent activity as well as activity that has happened on clusters over past 24 hours
+### Lab 2 - Elastic Cloud Enterprise Interfaces
