@@ -85,3 +85,26 @@
   - HOWEVER I did find I can open Kibana here `https://785cf5b797dd4f1e86fda7d59a32ae06.3.69.54.234.ip.es.io:9243/` 
 - Successfully ran kibana query
   - Found out that each individual action has to be run i.e. when `POST ....` and `GET...` both in console, each has to have the run button pressed seperate from one another. 
+## Lesson 3: Elastic Cloud Enterprise Features
+- By default Elastic Cloud provisions 1GB of RAM for every 32 GB of storage
+  - Decreasing the ratio for RAM:Storage with use of High Performance SSDs increases our performance for search intensive workloads
+    - go from 1:32 to 1:16 or even 1:8
+  - Increasing the ratio of RAM:Storage can be more efficient for workloads like logging
+    - go from 1:32 to 1:48 or 1:96
+- Upgrading can easily be done by the Web UI, it's easy to add new versions
+- Snapshots - allow us to backup Elasticsearch indicies and can allow us to recover from failure.
+  - A repository must be configured to support snapshots
+  - After configuring a snapshot repository, a snapshot is taken every 30 minutes (or at user set intreval)
+  - The following repositories are supported:
+    - Amazon S3
+    - Microsoft Azure
+    - Google Cloud Storage
+- By default, ECE collects monitoring data using Filebeat and Metricbeat and data is collected from every runner
+  - We can also monitor deployments through Kibana using the Elastic Stack monitoring feature.
+- ECE has built-in security features:
+  - IP Filtering
+  - Identity authorization services for SAML, LDAP, and Elasticsearch keystore
+- ECE also supports features that are part of the Elastic Stack.
+  - Encryption at rest is not configured "out of the box", hosts need to be configured for disk-level encryption using a tool like `dm-crypt`
+    - **NOTE**: Snapshot repositories also need to be configured for encryption
+### Lab 3: Elastic Cloud Enterprise Features
