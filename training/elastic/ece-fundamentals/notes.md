@@ -108,3 +108,8 @@
   - Encryption at rest is not configured "out of the box", hosts need to be configured for disk-level encryption using a tool like `dm-crypt`
     - **NOTE**: Snapshot repositories also need to be configured for encryption
 ### Lab 3: Elastic Cloud Enterprise Features
+- Started lab 3
+- signed into cluster
+- completed lab 3
+## Lesson 4: Learn More
+- Listed some good resources and ideas to get more experience using and setting up ECE.
