@@ -76,3 +76,12 @@
 - Created `my_cluster` as described in the tutorial
   - username: `elastic`
   - password: `EKLbgimnv7U3TLbAcUJXvHli` 
+  - ElasticSearch Endpoint: `https://8cc2dbed135d46da9c20a52b9d3d5441.172.31.43.230.ip.es.io:9243`
+  - ElasticSearc CloudID: `my_cluster:MTcyLjMxLjQzLjIzMC5pcC5lcy5pbzo5MjQzJDhjYzJkYmVkMTM1ZDQ2ZGE5YzIwYTUyYjlkM2Q1NDQxJDc4NWNmNWI3OTdkZDRmMWU4NmZkYTdkNTlhMzJhZTA2`
+  - Zone `ece-zone-1`
+- Doing bulk blog load: `curl -X POST -k -u elastic -H 'Content-Type: application/x-ndjson' https://8cc2dbed135d46da9c20a52b9d3d5441.172.31.43.230.ip.es.io:9243/blogs-000001/_doc/_bulk --data-binary @/home/elastic/blogs_bulk.json`
+- Launched Kibana as described in step 15 and found the same problem, updated IP address to AWS public IP
+  - having issues with updating in the webUI I keep getting `Internal Server Error`
+  - HOWEVER I did find I can open Kibana here `https://785cf5b797dd4f1e86fda7d59a32ae06.3.69.54.234.ip.es.io:9243/` 
+- Successfully ran kibana query
+  - Found out that each individual action has to be run i.e. when `POST ....` and `GET...` both in console, each has to have the run button pressed seperate from one another. 
